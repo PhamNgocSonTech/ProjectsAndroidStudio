@@ -1,122 +1,94 @@
 package com.android.learnandroidlifetime;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.graphics.Color;
-import android.nfc.Tag;
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+
+
+
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.android.learnandroidlifetime.R;
 
 public class MainActivity extends AppCompatActivity {
-    EditText textA, textB;
-    TextView viewResult;
-    Button btTong, btTru, btTitch,btUCLN , btChia,btQuit;
+    Button button1;
+    Button button2;
+    Button button3;
+    Button button4;
+    Button button5;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tinhtoan_layout);
-        RelativeLayout layout = new RelativeLayout(this);
-        layout.setBackgroundColor(Color.GREEN);
-        textA = (EditText) findViewById(R.id.editTextA);
-        textB = (EditText) findViewById(R.id.editTextB);
-        btTong = (Button) findViewById(R.id.buttonTong);
-        btTru = (Button) findViewById(R.id.buttonTru);
-        btTitch = (Button) findViewById(R.id.buttonNhan);
-        btChia = (Button) findViewById(R.id.buttonChia);
-        btUCLN = (Button) findViewById(R.id.buttonUCLN);
-        btQuit = (Button) findViewById(R.id.buttonQuit);
-        viewResult = (TextView) findViewById(R.id.editTextKQ);
+        setContentView(R.layout.activity_main);
 
+        // Find Button by its ID
+        this.button1 = (Button) this.findViewById(R.id.button1);
 
-        btTong.setOnClickListener(new View.OnClickListener() {
+        // Find button by its ID
+        this.button2 = (Button) this.findViewById(R.id.button2);
+
+        // Find button by its ID.
+        this.button3 = (Button) this.findViewById(R.id.button3);
+
+        // Find button by its ID.
+        this.button4 = (Button) this.findViewById(R.id.button4);
+
+        this.button5 = (Button) this.findViewById(R.id.button5);
+
+        // Called when the user clicks the button1.
+        button1.setOnClickListener(new Button.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                int soA = Integer.parseInt(textA.getText()+"");
-                int soB = Integer.parseInt(textB.getText()+"");
-                int KQ = soA + soB;
-                viewResult.setText(Integer.toString(KQ));
+
+                // Create a Intent:
+                // (This object contains content that will be sent to Example1Activity).
+                Intent myIntent = new Intent(MainActivity.this, MainActivityMath.class);
+
+                // Put parameters
+
+                // Start Example1Activity.
+                MainActivity.this.startActivity(myIntent);
+            }
+        });
+
+        // Called when the user clicks the button2.
+        button2.setOnClickListener(new Button.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
 
             }
         });
 
-        btTru.setOnClickListener(new View.OnClickListener() {
+        // Called when the user clicks the button3.
+        button3.setOnClickListener(new Button.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                int soA = Integer.parseInt(textA.getText()+"");
-                int soB = Integer.parseInt(textB.getText()+"");
-                int KQ = soA - soB;
-                viewResult.setText(Integer.toString(KQ));
 
             }
         });
 
-        btTitch.setOnClickListener(new View.OnClickListener() {
+        button4.setOnClickListener(new Button.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                int soA = Integer.parseInt(textA.getText()+"");
-                int soB = Integer.parseInt(textB.getText()+"");
-                int KQ = soA * soB;
-                viewResult.setText(Integer.toString(KQ));
 
             }
         });
 
-        btChia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int soA = Integer.parseInt(textA.getText()+"");
-                int soB = Integer.parseInt(textB.getText()+"");
-                int KQ = soA / soB;
-                viewResult.setText(Integer.toString(KQ));
+        button5.setOnClickListener(new Button.OnClickListener() {
 
-            }
-        });
-        btQuit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(this,"On Start", Toast.LENGTH_LONG).show();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(this,"On Resume", Toast.LENGTH_LONG).show();
-
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        Toast.makeText(this,"On Pause", Toast.LENGTH_LONG).show();
-
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        Toast.makeText(this,"On Stop", Toast.LENGTH_LONG).show();
-
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Toast.makeText(this,"On Destroy", Toast.LENGTH_LONG).show();
-
     }
 }
