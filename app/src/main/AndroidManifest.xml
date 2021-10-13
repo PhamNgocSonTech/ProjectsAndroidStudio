@@ -10,11 +10,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroidLifetime">
         <activity
+            android:name=".MainActivityDemoToast"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityImage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityLab"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityBMI"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityRandom"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityNhietDo"
+            android:exported="true" />
+        <activity
             android:name=".MainActivityMath"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

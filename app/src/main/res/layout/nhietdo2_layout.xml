@@ -1,34 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/txtView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Faherenheit" />
+        android:text="Nhập số cần chuyển đổi" />
 
     <EditText
-        android:id="@+id/txtFar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text=""
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Celsius" />
-
-    <EditText
-        android:id="@+id/txtCel"
+        android:id="@+id/editTextTemp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -43,31 +28,39 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnFar"
-            android:layout_width="211dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Convert To Celsius" />
-
-        <Button
-            android:id="@+id/btnCel"
+            android:id="@+id/btnC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Convert To Fahrenheit" />
+            android:text="Chuyển sang độ C"
+            app:backgroundTint="#4CAF50" />
 
+        <Button
+            android:id="@+id/btnF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chuyển sang độ F"
+            app:backgroundTint="#4CAF50" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnClear"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:text="Clear" />
-
-    <TextView
-        android:id="@+id/txtShow"
+        android:id="@+id/btnCl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text="Clear"
+        app:backgroundTint="#4CAF50" />
 
+    <TextView
+        android:id="@+id/textViewKQ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kết Quả" />
+
+    <TextView
+        android:id="@+id/txtKQ"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:text=" "
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>

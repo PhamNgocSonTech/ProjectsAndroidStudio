@@ -61,7 +61,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivityNhietDo.class);
 
+                // Put parameters
+
+                // Start Example1Activity.
+                MainActivity.this.startActivity(myIntent);
 
             }
         });
@@ -71,7 +76,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivityRandom.class);
 
+                // Put parameters
+
+                // Start Example1Activity.
+                MainActivity.this.startActivity(myIntent);
             }
         });
 
@@ -79,7 +89,12 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Intent myIntent = new Intent(MainActivity.this, MainActivityBMI.class);
 
+                // Put parameters
+
+                // Start Example1Activity.
+                MainActivity.this.startActivity(myIntent);
             }
         });
 

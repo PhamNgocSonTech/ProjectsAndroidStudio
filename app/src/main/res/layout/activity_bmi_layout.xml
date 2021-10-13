@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="209dp"
+        android:layout_height="181dp">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:text="CHƯƠNG TRÌNH TÍNH BMI" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewChieuCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao" />
+
+        <EditText
+            android:id="@+id/editTextChieuCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewCanNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng" />
+
+        <EditText
+            android:id="@+id/editTextCanNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="495dp"
+        android:layout_height="94dp">
+
+        <Button
+            android:id="@+id/btnBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tính BMI"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI=" />
+
+        <EditText
+            android:id="@+id/editShowBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewChuanDoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chuẩn đoán" />
+
+        <EditText
+            android:id="@+id/editShowChuanDoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            tools:ignore="TouchTargetSizeCheck" />
+    </TableRow>
+</TableLayout>

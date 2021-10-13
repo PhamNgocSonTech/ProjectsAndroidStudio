@@ -21,7 +21,7 @@ public class MainActivityMath extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tinhtoan_layout);
         RelativeLayout layout = new RelativeLayout(this);
-        layout.setBackgroundColor(Color.GREEN);
+       // layout.setBackgroundColor(Color.GREEN);
         textA = (EditText) findViewById(R.id.editTextA);
         textB = (EditText) findViewById(R.id.editTextB);
         btTong = (Button) findViewById(R.id.buttonTong);
