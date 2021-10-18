@@ -19,7 +19,7 @@ public class MainActivityDemoIntent extends AppCompatActivity {
         btnCaller = (Button) findViewById(R.id.btnCall);
         btnDial = (Button) findViewById(R.id.btnDial);
         btnContact = (Button) findViewById(R.id.btnContact);
-        btnSMS = (Button) findViewById(R.id.btnSMS);
+        btnSMS = (Button) findViewById(R.id.btnImg);
         btnGG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,11 +54,9 @@ public class MainActivityDemoIntent extends AppCompatActivity {
         btnSMS.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("sms :(+84)999333777");
-                Intent myIntent5 = new Intent(Intent.ACTION_SENDTO, uri);
-                myIntent5.setData(uri);
-                myIntent5.putExtra("sms_body", "O nha di, dich benh ma di dau");
-                MainActivityDemoIntent.this.startActivity(myIntent5);
+                Intent myIntent = new Intent(); myIntent.setType("image/pictures/*");
+                myIntent.setAction(Intent.ACTION_GET_CONTENT);
+                MainActivityDemoIntent.this.startActivity(myIntent);
             }
         });
 

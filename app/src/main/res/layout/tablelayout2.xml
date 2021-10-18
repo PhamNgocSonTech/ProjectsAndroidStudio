@@ -14,10 +14,11 @@
             android:text="CheckBox" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/btnSuKienClick1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:onClick="btn_SuKienClick1"
+            android:text="Su Kien 1" />
     </TableRow>
 
     <TableRow
@@ -31,15 +32,87 @@
             android:text="CheckBox" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/btnSuKienClick2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="Su Kien 2"
+            />
 
-        <RadioButton
-            android:id="@+id/radioButton"
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RadioButton" />
+
+        </RadioGroup>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnSuKienClick3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:text="Su Kien 3" />
     </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnSuKienClick4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su Kien 4" />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnSuKienClick5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su Kien 5" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/btnSuKienClick6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Su Kien 6" />
+    </TableRow>
+
+
 </TableLayout>

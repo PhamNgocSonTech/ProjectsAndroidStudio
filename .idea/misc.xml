@@ -8,12 +8,15 @@
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main2.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_activit_image.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_alert.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_demo_intent.xml" value="0.25" />
-        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_demo_toast.xml" value="0.33" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_demo_toast.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_image.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_lab.xml" value="0.25" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_main_list_view.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/activity_random_layout.xml" value="0.33" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/constraintlayout.xml" value="0.33" />
-        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/demo_relative_layout.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/demo_relative_layout.xml" value="0.25" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/framelayout1.xml" value="0.33" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/h_linear_layout.xml" value="0.33" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/hh_table_layout.xml" value="0.25" />
@@ -21,8 +24,8 @@
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/newlayout.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/nhietdo2_layout.xml" value="0.33" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/nhietdo_layout.xml" value="0.33" />
-        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/relativelayout.xml" value="0.20416666666666666" />
-        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/tablelayout2.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/relativelayout.xml" value="0.22" />
+        <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/tablelayout2.xml" value="0.25" />
         <entry key="..\:/AndroidProject/LearnAndroidLifetime2/app/src/main/res/layout/tinhtoan_layout.xml" value="0.22" />
       </map>
     </option>

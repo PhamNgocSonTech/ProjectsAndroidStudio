@@ -32,7 +32,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </TableRow>
 
     <TableRow
@@ -52,7 +52,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </TableRow>
 
     <TableRow
@@ -72,7 +72,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </TableRow>
 
     <TableRow
@@ -104,7 +104,7 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </TableRow>
 
     <TableRow
@@ -124,6 +124,6 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:text=""
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
     </TableRow>
 </TableLayout>

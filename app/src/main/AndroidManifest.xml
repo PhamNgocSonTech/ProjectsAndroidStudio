@@ -15,6 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroidLifetime">
         <activity
+            android:name=".MainActivityListView"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityDemo"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivityAlert"
+            android:exported="true" />
+        <activity
             android:name=".MainActivityDemoRelativeLayout"
             android:exported="true" />
         <activity

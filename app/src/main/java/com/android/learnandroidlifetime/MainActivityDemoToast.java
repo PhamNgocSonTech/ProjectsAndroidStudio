@@ -54,49 +54,7 @@ public class MainActivityDemoToast extends AppCompatActivity {
                 icon.setImageDrawable(drawable);*/
             }
         });
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivityDemoToast.this);
 
-        // Set Title and Message:
-        builder.setTitle("Thoát ứng dụng").setMessage("Bạn muốn thoát ứng dụng chứ?");
-
-        //
-        builder.setCancelable(true);
-
-
-        // Create "Positive" button with OnClickListener.
-        builder.setPositiveButton("Đồng ý", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Toast.makeText(MainActivityDemoToast.this,"Thoát",
-                        Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        });
-
-
-        // Create "Negative" button with OnClickListener.
-        builder.setNegativeButton("Hủy", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                Toast.makeText(MainActivityDemoToast.this,"Chào mừng bạn trở lại ứng dụng",
-                        Toast.LENGTH_SHORT).show();
-                //  Cancel
-                dialog.cancel();
-            }
-        });
-
-
-        // Create "Neutral" button with OnClickListener.
-        builder.setNeutralButton("Neutral", new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                //  Action for 'NO' Button
-                Toast.makeText(MainActivityDemoToast.this,"You choose neutral button",
-                        Toast.LENGTH_SHORT).show();
-            }
-        });
-
-
-        // Create AlertDialog:
-        AlertDialog alert = builder.create();
-        alert.show();
 
 
     }
