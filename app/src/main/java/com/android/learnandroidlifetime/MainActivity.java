@@ -10,8 +10,6 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.android.learnandroidlifetime.R;
-
 public class MainActivity extends AppCompatActivity {
     Button button1;
     Button button2;
@@ -26,18 +24,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Find Button by its ID
-        this.button1 = (Button) this.findViewById(R.id.button1);
+        this.button1 = (Button) this.findViewById(R.id.buttonSum);
 
         // Find button by its ID
-        this.button2 = (Button) this.findViewById(R.id.button2);
+        this.button2 = (Button) this.findViewById(R.id.btnNhietDo);
 
         // Find button by its ID.
-        this.button3 = (Button) this.findViewById(R.id.button3);
+        this.button3 = (Button) this.findViewById(R.id.buttonRan);
 
         // Find button by its ID.
-        this.button4 = (Button) this.findViewById(R.id.button4);
+        this.button4 = (Button) this.findViewById(R.id.buttonBMI);
 
-        this.button5 = (Button) this.findViewById(R.id.button5);
+        this.button5 = (Button) this.findViewById(R.id.buttonFinish);
 
         // Called when the user clicks the button1.
         button1.setOnClickListener(new Button.OnClickListener() {

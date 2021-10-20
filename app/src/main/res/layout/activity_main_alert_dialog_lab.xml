@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivityAlertDialogLab" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTTCN"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="THÔNG TIN CÁ NHÂN" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Họ Tên" />
+
+            <EditText
+                android:id="@+id/editTextTen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:text=""
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="177dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewCLB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLB Yêu Thích" />
+
+            <CheckBox
+                android:id="@+id/checkBoxMU"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Manchester United"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBM"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Bayer Munich" />
+
+            <CheckBox
+                android:id="@+id/checkBoxBA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Barcelona" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textColor"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="Màu Yêu Thích" />
+
+        <RadioGroup
+            android:id="@+id/rgMauYT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioBtnXanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Xanh" />
+
+            <RadioButton
+                android:id="@+id/radioBtnDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đỏ" />
+
+            <RadioButton
+                android:id="@+id/radioBtnTim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tím" />
+
+            <RadioButton
+                android:id="@+id/radioBtnVang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Vàng" />
+
+        </RadioGroup>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp">
+
+            <TableRow
+                android:layout_width="221dp"
+                android:layout_height="69dp">
+
+                <TextView
+                    android:id="@+id/textViewQue"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:text="Quê Quán" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="145dp"
+                    android:layout_height="wrap_content"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnXuatTT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Xuất Thông Tin"
+            android:textColor="#100808"
+            app:backgroundTint="#CDDC39" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
