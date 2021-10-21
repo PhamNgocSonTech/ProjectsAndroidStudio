@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="btn_SuKienClick1"
-            android:text="Su Kien 1" />
+            android:text="Su Kien 1 (XML)" />
     </TableRow>
 
     <TableRow
@@ -32,11 +32,10 @@
             android:text="CheckBox" />
 
         <Button
-            android:id="@+id/btnSuKienClick2"
+            android:id="@+id/btnAnonymousListener"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su Kien 2"
-            />
+            android:text="Anonymous Listener" />
 
 
     </TableRow>
@@ -76,10 +75,10 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/btnSuKienClick3"
+            android:id="@+id/btnActivityListener"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su Kien 3" />
+            android:text="Activity Listener" />
     </TableRow>
 
     <TableRow
@@ -87,20 +86,20 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/btnSuKienClick4"
+            android:id="@+id/btnVarListener"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su Kien 4" />
+            android:text="Varialbe Listener" />
     </TableRow>
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/btnSuKienClick5"
+            android:id="@+id/btnClassListener"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su Kien 5" />
+            android:text="Class Listener" />
     </TableRow>
 
     <TableRow
@@ -108,10 +107,10 @@
         android:layout_height="match_parent" >
 
         <Button
-            android:id="@+id/btnSuKienClick6"
+            android:id="@+id/btnSubClassing"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su Kien 6" />
+            android:text="View Subclassing" />
     </TableRow>
 
 

@@ -21,12 +21,12 @@ public class MainActivityDemoToast extends AppCompatActivity {
     Random r;
     int lengthArray;
     int[] images = {
-            R.drawable.nobita,
-            R.drawable.doraemon,
-            R.drawable.dorami,
-            R.drawable.shizuka,
-            R.drawable.suneo,
-            R.drawable.takeshi,
+            R.drawable.bau,
+            R.drawable.cua,
+            R.drawable.ca,
+            R.drawable.tom,
+            R.drawable.nai,
+            R.drawable.ga,
 
     };
     @Override

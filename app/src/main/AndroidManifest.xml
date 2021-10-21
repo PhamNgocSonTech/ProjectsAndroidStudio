@@ -16,7 +16,7 @@
         android:theme="@style/Theme.LearnAndroidLifetime" >
         <activity
             android:name=".MainActivityCustomListView"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivityAlertDialogLab"
             android:exported="true" />
@@ -27,7 +27,7 @@
             android:name=".MainActivityListView"
             android:exported="true" />
         <activity
-            android:name=".MainActivityDemo"
+            android:name=".MainActivityDemoEvent"
             android:exported="true" />
         <activity
             android:name=".MainActivityAlert"

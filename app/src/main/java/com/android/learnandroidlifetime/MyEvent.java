@@ -7,7 +7,7 @@ public class MyEvent implements View.OnClickListener{
 
     @Override
     public void onClick(View v) {
-        if(v.getId() == R.id.btnSuKienClick5){
+        if(v.getId() == R.id.btnClassListener){
             Toast.makeText(v.getContext(), "Su Kien 5 Ne", Toast.LENGTH_LONG).show();
         }
     }

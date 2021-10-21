@@ -7,10 +7,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewQLSV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:background="#8BC34A"
+        android:gravity="center_horizontal"
+        android:text="QUẢN LÍ SINH VIÊN"
+        android:textColor="#1C0E0E" />
 
     <TableLayout
         android:layout_width="match_parent"
@@ -21,19 +24,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textViewIDSV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Mã SV" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/editTextIDSV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -41,19 +43,18 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textViewTenSV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Họ tên" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/editTextTenSV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:text="Name"
-                tools:ignore="TouchTargetSizeCheck" />
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
         </TableRow>
 
         <TableRow
@@ -61,27 +62,29 @@
             android:layout_height="144dp">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/textViewGioiTinh"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Giới tính" />
 
             <RadioGroup
+                android:id="@+id/genderGroup"
                 android:layout_width="352dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/radioBtnMale"
                     android:layout_width="157dp"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Nam" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/radioBtnFemale"
                     android:layout_width="171dp"
                     android:layout_height="wrap_content"
-                    android:text="RadioButton" />
+                    android:text="Nữ" />
             </RadioGroup>
 
         </TableRow>
@@ -89,11 +92,13 @@
     </TableLayout>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnNhapSV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Button" />
+        android:text="Nhập SV"
+        android:textColor="#150B0B"
+        app:backgroundTint="#009688" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -105,14 +110,19 @@
             android:layout_width="447dp"
             android:layout_height="40dp"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:background="#8BC34A"
+            android:text="Danh sách SV"
+            android:textColor="#120808" />
 
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="128dp"
-            android:layout_height="39dp"
+        <ImageButton
+            android:id="@+id/imageButtonXoa"
+            android:layout_width="147dp"
+            android:layout_height="48dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/btnDel" />
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/remove"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
