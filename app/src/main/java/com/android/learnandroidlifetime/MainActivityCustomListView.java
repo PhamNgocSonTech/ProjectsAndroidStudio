@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -28,11 +29,11 @@ public class MainActivityCustomListView extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_custom_list_view);
         lvSV = (ListView) findViewById(R.id.lvSinhVien);
-        genderGroup = (RadioGroup)findViewById(R.id.genderGroup);
+        genderGroup = findViewById(R.id.genderGroup);
         btnInput  = findViewById(R.id.btnNhapSV);
         btnXoa = findViewById(R.id.imageButtonXoa);
         editMa = findViewById(R.id.editTextIDSV);
-        editTen = findViewById(R.id.editTextHoTen);
+        editTen = findViewById(R.id.editTextTenSV);
         arrSV = new ArrayList<SinhVien>();
         adapter = new MyArrayAdapter(
         //Khởi tạo adapter và gán Data source
@@ -86,7 +87,7 @@ public class MainActivityCustomListView extends AppCompatActivity {
             //lấy ra dòng thứ i trong ListView
             // Dòng thứ i sẽ có 3 phần tử: ImageView, TextView, Checkbox
            View v = lvSV.getChildAt(i);
-           CheckBox chk = (CheckBox) v.findViewById(R.id.chkitem);
+           CheckBox chk = (CheckBox) v.findViewById(R.id.chkItem);
             if(chk.isChecked())//nếu phần tử nào đc check thì xóa
             {
                 //xóa ptu thứ i ra khỏi DS

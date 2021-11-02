@@ -12,27 +12,32 @@ public class SinhVien
 
     @Override
     public String toString() {
+
         return getMaSV() + " : " + getHoTen();
     }
 
     public void setGioiTinh(boolean gioiTinh) {
-        gioiTinh = gioiTinh;
+
+       this.gioiTinh = gioiTinh;
     }
 
     public String getHoTen() {
-        return hoTen;
+
+        return this.hoTen;
     }
 
     public void setHoTen(String hoTen) {
-        hoTen = hoTen;
+
+        this.hoTen = hoTen;
     }
 
     public String getMaSV() {
-        return maSV;
+
+        return this.maSV;
     }
 
     public void setMaSV(String maSV) {
-        maSV = maSV;
+        this.maSV = maSV;
     }
 
 }
