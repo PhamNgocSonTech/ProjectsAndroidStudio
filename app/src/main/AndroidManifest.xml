@@ -15,8 +15,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnAndroidLifetime">
         <activity
+            android:name="com.android.demo.MainActivityGridViewWithCustomLayout"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.android.demo.MainActivitySimpleGridView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".MainActivityPopupMenu"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivityMenu"
             android:exported="true">
